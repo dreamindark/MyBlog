@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" type="text/css"/>
+</head>
+<body style="height:2000px" >
+    <div class="logo"><img src="{% static 'img/logo.png' %}"></div>
+    <!--图片来源于网易云音乐江山雪的图标-->
+    <div id="top">
+        <div class="blog">梵宇墨</div>
+        <div class="search">
+            <input type="text" placeholder="输入想看的内容" class="search1"/>
+            <input type="submit" placeholder="搜索" class="submit"/>
+        </div>
+    </div>
+    <div id="kind">
+        <div class="list2">
+            <ul>
+                <li>前端技术</li>
+                <li>后端技术</li>
+                <li>爬虫及数据</li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <div id="content"></div>
+        <div id="nav">
+            <div class="first">
+                <h2>分类目录</h2>
+                <div style="height: 20px"></div>
+                <hr/>
+                <div class="list1">
+                    <ul class="list">
+                        <li><a href="#">python</a></li>
+                        <li><a href="#">javascript</a></li>
+                        <li><a href="#">css</a></li>
+                        <li><a href="#">html</a></li>
+                        <li><a href="#">jquery</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second">
+                <h2>近期文章</h2>
+            </div>
+            <div class="third">
+                <h2>近期评论</h2>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

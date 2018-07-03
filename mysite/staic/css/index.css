@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    position: relative;
+    background-color: rgb(244,244,244);
+}
+.logo{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    border-radius: 100%;
+    animation:myfirst 5s linear infinite;
+    -moz-animation:myfirst 5s linear infinite;
+    -webkit-animation:myfirst 5s linear infinite;
+    -o-animation:myfirst 5s linear infinite
+}
+@keyframes myfirst {
+
+    from{
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+    }
+    to{
+        -webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+    }
+}
+#top{
+    width: 100%;
+    height: 100px;
+    /*background-color: rosybrown;*/
+}
+#main{
+    position: relative;
+    width: 990px;
+    height: 2000px;
+    left: 180px;
+    background-color: #F2EFE6;
+    box-shadow: 2px 2px 4px #e2e2e2;
+}
+.blog{
+    position: absolute;
+    height: 80px;
+    width: 400px;
+    top: 0;
+    left: 180px;
+    font-size: 50px;
+    line-height: 120px;
+    font-family: KaiTi;
+    font-weight: bolder;
+}
+.search{
+    position: absolute;
+    right: 180px;
+    top: 50px;
+}
+.search1{
+    height: 30px;
+}
+.submit{
+    height: 33px;
+    width: 50px;
+    border: none;
+}
+.submit:active{
+    opacity: 0.4;
+}
+.submit:hover{
+    cursor: pointer;
+}
+#kind{
+    position: relative;
+    height: 50px;
+    width: 990px;
+    left: 180px;
+    background-color: cadetblue;
+}
+.list2{
+    position: absolute;
+    right: 10px;
+}
+.list2 li{
+    list-style: none;
+    float: left;
+    height: 50px;
+    width: 150px;
+    line-height: 50px;
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: aqua;
+    text-align: center;
+    border: 1px solid saddlebrown;
+}
+#nav{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 330px;
+    height: 1800px;
+    background-color: aqua;
+}
+.first{
+    position: absolute;
+    padding: 20px;
+    top: 10px;
+    left: 10px;
+    width: 260px;
+    height: 400px;
+    background-color: #FFFFFF;
+
+}
+hr{
+    height: 1px;
+    border: none;
+    border-top: 1px dashed;
+}
+.list1{
+    position: absolute;
+    top: 100px;
+    left: 40px;
+}
+.list1 li{
+    height: 40px;
+
+}
+.second{
+    position: absolute;
+    padding: 20px;
+    top: 500px;
+    left: 10px;
+    width: 260px;
+    height: 400px;
+    background-color: #FFFFFF;
+}
+.third{
+    position: absolute;
+    padding: 20px;
+    top: 1000px;
+    left: 10px;
+    width: 260px;
+    height: 400px;
+    background-color: #FFFFFF;
+}
+#content{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 600px;
+    height: 1800px;
+    background-color: sienna;
+}
