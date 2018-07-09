@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+
+#hh{
+
+    height:1px;
+    border:none;
+    border-top:1px solid #555555;
+    width: 1000px;
+    margin: 20px auto;
+}
+
+
+body{
+    position: relative;
+    background-color: rgb(244,244,244);
+}
+.logo{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    border-radius: 100%;
+    animation:myfirst 5s linear infinite;
+    -moz-animation:myfirst 5s linear infinite;
+    -webkit-animation:myfirst 5s linear infinite;
+    -o-animation:myfirst 5s linear infinite
+}
+@keyframes myfirst {
+
+    from{
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+    }
+    to{
+        -webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+    }
+}
+#top{
+    width: 100%;
+    height: 100px;
+    /*background-color: rosybrown;*/
+}
+#main{
+    position: relative;
+    width: 990px;
+    height: 1000px;
+    left: 11.5%;
+    background-color: #F2EFE6;
+    box-shadow: 2px 2px 4px #e2e2e2;
+    top:20px;
+}
+.blog{
+    position: absolute;
+    height: 80px;
+    width: 400px;
+    top: 0;
+    left: 14%;
+    font-size: 50px;
+    line-height: 120px;
+    font-family: KaiTi;
+    font-weight: bolder;
+}
+.search{
+    position: absolute;
+    right: 150px;
+    top: 50px;
+}
+.search1{
+    height: 30px;
+}
+.submit{
+    height: 33px;
+    width: 50px;
+    border: none;
+}
+.submit:active{
+    opacity: 0.4;
+}
+.submit:hover{
+    cursor: pointer;
+}
+/*#登录*/
+#log{
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    right: 20px;
+}
+
+/*评论框*/
+#comment{
+    position: relative;
+    top: 50px;
+    left: 30%;
+    height: 200px;
+    width: 500px;
+
+}

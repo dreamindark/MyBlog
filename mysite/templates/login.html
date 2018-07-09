@@ -1,0 +1,37 @@
+{% load  static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="{% static 'js/jquery-1.11.2.min.js' %}"></script>
+</head>
+<body>
+    <form action="/user/login/" method="post">
+        {{ username }}
+        <input type="text" name="username" placeholder="用户姓名"><br>
+        {{ password }}
+        <input type="password" name="password" placeholder="密码"><br>
+        {{ verify }}
+        <img  id='code' onclick="change_code(this)" src="" alt=""><br>
+        <input type="text" name="verify_code"><br>
+        <input type="submit" value="登录">
+    </form>
+</body>
+
+<script type="text/javascript">
+    window.onload = change_code($('#code'));
+
+    function change_code(obj) {
+        $(obj).removeAttr('src');
+        $.get('/api/v1/get_code/',function (data) {
+            $(obj).attr('src','data:image/jepg;base64,'+data)
+        })
+    }
+</script>
+
+
+
+
+
+</html>

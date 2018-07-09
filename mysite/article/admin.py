@@ -6,7 +6,7 @@ from article.models import Category
 
 
 class ArticleAdmin(admin.ModelAdmin):
-    list_display = ['title','content']
+    list_display = ['title','content','data']
     list_filter = ['title']
     ordering = ['title','content']
     search_fields = ('title',)

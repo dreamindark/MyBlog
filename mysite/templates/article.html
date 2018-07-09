@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/article.css' %}">
+</head>
+<body>
+    <div id="log">
+
+        {% if request.session.user_id %}
+            	<h4 style='font-family:楷体;'>欢迎 {{ request.session.username }} </h4>
+            <a href="/user/logout"><button>注销</button></a>
+        {% else %}
+	            <h5 style='font-family:楷体;'>请重新登陆</h5>
+        {% endif %}
+
+    </div>
+    <div class="logo"><img src="{% static 'img/logo.png' %}"></div>
+    <!--图片来源于网易云音乐江山雪的图标-->
+    <div id="top">
+        <div class="blog">梵宇墨</div>
+        <div class="search">
+            <input type="text" placeholder="输入想看的内容" class="search1"/>
+            <input type="submit" placeholder="搜索" class="submit"/>
+        </div>
+    </div>
+    <hr id="hh"/>
+    <div id="main"></div>
+    <div id="comment">
+        <p>发表下您的感想吧</p>
+        <form action="/api/v1/comment/" method="post" >
+{#            <textarea cols="60" rows="10" name="comment" style="resize: none; display:inline">#}
+{#                请先登录再评论#}
+{#            </textarea>#}
+            <input type="text" name="comment">
+            <input type="submit" value="评论">
+        </form>
+    </div>
+</body>
+</html>
